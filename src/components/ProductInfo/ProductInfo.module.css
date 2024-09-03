@@ -1,0 +1,155 @@
+@import "@fontsource/noto-sans";
+
+.productDetails {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.stockStatus {
+  color: #e26d26;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.productTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviewScore {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.stars {
+  color: #f4c150;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 15px;
+}
+
+.thumbnail,
+.thumbnailSelected {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.thumbnailSelected {
+  border: 2px solid #e26d26;
+}
+
+/* Mobile devices (600px and below) */
+@media (max-width: 600px) {
+  .productDetails {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+
+  .productTitle {
+    font-size: 28px;
+  }
+
+  .reviews {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .thumbnails {
+    gap: 10px;
+  }
+
+  .thumbnail,
+  .thumbnailSelected {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Small tablets and larger mobile devices (768px and below) */
+@media (max-width: 768px) {
+  .productDetails {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+  }
+
+  .productTitle {
+    font-size: 32px;
+  }
+
+  .reviews {
+    margin-bottom: 12px;
+  }
+
+  .description {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .thumbnails {
+    gap: 12px;
+  }
+
+  .thumbnail,
+  .thumbnailSelected {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* Desktops (1024px and above) */
+@media (min-width: 1024px) {
+  .productDetails {
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 70px;
+  }
+
+  .productTitle {
+    font-size: 42px;
+  }
+
+  .reviews {
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .thumbnails {
+    gap: 15px;
+  }
+
+  .thumbnail,
+  .thumbnailSelected {
+    width: 60px;
+    height: 60px;
+  }
+}

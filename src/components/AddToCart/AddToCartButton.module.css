@@ -1,0 +1,141 @@
+.stickyBar {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px; /* Extra side spaces */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Noto Sans", sans-serif;
+  z-index: 1000;
+}
+
+.viewAll {
+  display: flex;
+  align-items: center;
+}
+
+.viewAllIcon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.viewAllText {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.pageNumber {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.pageDivider {
+  width: 40px;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+.cartSection {
+  display: flex;
+  align-items: center;
+}
+
+.addToCartButton {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cartIcon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.addToCartText {
+  font-size: 16px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 20px;
+  color: #333;
+}
+
+/* Mobile devices (600px and below) */
+@media (max-width: 600px) {
+  .stickyBar {
+    flex-direction: column;
+    padding: 10px 20px; /* Reduced padding */
+    align-items: flex-start;
+  }
+
+  .viewAll {
+    margin-bottom: 10px;
+  }
+
+  .pagination {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .cartSection {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .addToCartButton {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 16px;
+    margin-left: 0;
+  }
+}
+
+/* Small tablets and larger mobile devices (768px and below) */
+@media (max-width: 768px) {
+  .stickyBar {
+    padding: 10px 40px;
+  }
+
+  .viewAllText {
+    font-size: 14px;
+  }
+
+  .pagination .pageNumber {
+    font-size: 13px;
+  }
+
+  .addToCartButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+}

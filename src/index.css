@@ -1,0 +1,22 @@
+@import "@fontsource/noto-sans";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+/* Container for overall layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; 
+  overflow-x: hidden !important;
+}

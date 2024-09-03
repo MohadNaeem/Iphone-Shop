@@ -1,0 +1,143 @@
+@import "@fontsource/noto-sans";
+
+.appBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  font-family: "Noto Sans", sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+
+.menuIcon {
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 130px;
+  margin-left: 30px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.navLinks a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+}
+.navLinks a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: darkgreen;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Use gap for consistent spacing between the first three icons */
+}
+
+.icons svg {
+  font-size: 24px; /* Ensure consistent icon size */
+  cursor: pointer;
+  color: #666;
+}
+
+.cartBadge {
+  position: relative;
+}
+
+.cartBadge svg {
+  font-size: 24px; /* Ensure consistent icon size */
+}
+
+.cartBadge span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #d9534f;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.icons .profileIcon {
+  margin-left: 30px; /* Add extra space before the last icon */
+}
+
+/* Mobile devices (600px and below) */
+@media (max-width: 600px) {
+  .appBar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 0;
+    margin-bottom: 10px; /* Space between logo and navLinks on mobile */
+  }
+
+  .menuIcon {
+    align-self: flex-end; /* Align menu icon to the right on mobile */
+  }
+
+  .navLinks {
+    display: none; /* Hide navigation links on mobile */
+  }
+
+  .icons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .icons .profileIcon {
+    margin-left: 0; /* Remove extra margin on mobile */
+  }
+}
+
+/* Small tablets and larger mobile devices (768px and below) */
+@media (max-width: 768px) {
+  .appBar {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    margin-right: 50px;
+    margin-left: 15px;
+  }
+
+  .navLinks a {
+    font-size: 13px;
+    margin: 0 8px;
+  }
+
+  .icons {
+    gap: 15px;
+  }
+
+  .icons .profileIcon {
+    margin-left: 20px;
+  }
+}
